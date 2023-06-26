@@ -20,7 +20,7 @@ public class LoginTests extends TestBase{
         app.getUser().fillLoginForm("asd@fgh.com", "$Asdf1234");
         app.getUser().submitForm();
 //        app.getUser().pause(5000);
-//        Assert.assertTrue(app.getUser().isLoggedSuccess());
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 
 
