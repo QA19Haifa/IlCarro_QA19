@@ -1,0 +1,4 @@
+18:56:28 INFO  tests.TestBase - Method openRegistrationForm() invoked
+18:56:29 INFO  tests.TestBase - Method fillRegistrationForm() invoked
+18:56:29 INFO  tests.TestBase - Method submitForm() invoked
+18:56:29 INFO  tests.TestBase - Registration test starts with data : john3388@mail.com & Asdf1234

@@ -2,7 +2,9 @@ package manager;
 
 import models.Car;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,8 +38,17 @@ public class HelperCar extends HelperBase{
         type(By.id("seats"), car.getSeats());
         type(By.id("class"), car.getCarClass());
         type(By.id("serialNumber"), car.getCarRegNumber());
+//        typeSerialNumber(car.getCarRegNumber());
         type(By.id("price"), car.getPrice());
     }
+
+//    public void typeSerialNumber(String serialNumber){
+//        Rectangle rect = wd.findElement(By.id("serialNumber")).getRect();
+//        int x = rect.getX() + rect.getWidth() * 7 / 8;
+//        int y = rect.getY() + rect.getHeight() / 2;
+//        Actions actions = new Actions(wd);
+//        actions.moveByOffset(x, y).click().perform();
+//    }
 
     public void typeLocation(String address){
         type(By.id("pickUpPlace"), address);

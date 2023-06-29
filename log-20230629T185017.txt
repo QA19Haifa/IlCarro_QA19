@@ -1,0 +1,1 @@
+18:50:24 INFO  tests.TestBase - Registration test starts with data : john3023@mail.com & $Asdf1234
