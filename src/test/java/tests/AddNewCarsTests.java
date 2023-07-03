@@ -1,10 +1,13 @@
 package tests;
 
+import manager.NgListener;
 import models.Car;
 import models.User;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(NgListener.class)
 public class AddNewCarsTests extends TestBase{
 
     // isLogged?

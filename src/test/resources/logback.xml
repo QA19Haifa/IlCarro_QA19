@@ -2,8 +2,8 @@
 
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>log-${bySecond}.txt</file>
-<!--        <append>true</append>-->
+        <file>Log/log-${bySecond}.txt</file>
+        <!--        <append>true</append>-->
         <!-- set immediateFlush to false for much higher logging throughput -->
         <immediateFlush>true</immediateFlush>
         <!-- encoders are assigned the type
