@@ -1,5 +1,6 @@
 package tests;
 
+import manager.ProviderData;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -33,6 +34,16 @@ public class LoginTests extends TestBase{
         app.getUser().openLoginForm();
 //        app.getUser().fillLoginForm("asd@fgh.com", "$Asdf1234");
 //        app.getUser().fillLoginForm(user.getEmail(), user.getPassword());
+        app.getUser().fillLoginForm(user);
+        app.getUser().submitForm();
+//        app.getUser().pause(5000);
+//        Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
+
+    @Test(dataProvider = "userModelListDTO", dataProviderClass = ProviderData.class)
+    public void loginPositiveUserDTO(User user){
+        logger.info("User: " + user.toString() + " is provided");
+        app.getUser().openLoginForm();
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
 //        app.getUser().pause(5000);

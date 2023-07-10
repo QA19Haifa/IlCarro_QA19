@@ -22,5 +22,4 @@ public class Car {
     String carRegNumber;
     String price;
 
-
 }
