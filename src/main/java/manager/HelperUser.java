@@ -42,14 +42,14 @@ public class HelperUser extends HelperBase{
         // variant 1
         //        click(By.cssSelector("label[for='terms-of-use']"));
         // variant 2
-//        JavascriptExecutor js = (JavascriptExecutor) wd;
-//        js.executeScript("document.querySelector('#terms-of-use').click();");
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
         // variant 3
-        Rectangle rect = wd.findElement(By.cssSelector(".checkbox-container")).getRect();
-        int x = rect.getX() + 5;
-        int y = rect.getY() + rect.getHeight() / 4;
-        Actions actions = new Actions(wd);
-        actions.moveByOffset(x, y).click().perform();
+//        Rectangle rect = wd.findElement(By.cssSelector(".checkbox-container")).getRect();
+//        int x = rect.getX() + 5;
+//        int y = rect.getY() + rect.getHeight() / 4;
+//        Actions actions = new Actions(wd);
+//        actions.moveByOffset(x, y).click().perform();
 
     }
 
